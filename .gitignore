@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# JAX / ML caches
+.jax_cache/
+*.ckpt
+*.eqx
+*.msgpack
+
+# Data / artifacts (regenerable)
+data/raw/
+data/processed/
+data/*.npz
+data/*.npy
+artifacts/
+runs/
+outputs/
+wandb/
+mlruns/
+
+# Figures (regenerable) -- keep docs/figures/.gitkeep
+docs/figures/*.png
+docs/figures/*.pdf
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

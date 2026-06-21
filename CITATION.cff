@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use BBN-JAX, please cite it as below."
+title: "BBN-JAX: Differentiable Machine-Learning Emulators for Big Bang Nucleosynthesis"
+authors:
+  - family-names: "Authors"
+    given-names: "BBN-JAX"
+version: 0.1.0
+date-released: 2026-06-18
+license: MIT
+repository-code: "https://github.com/your-org/bbn-jax"
+keywords:
+  - cosmology
+  - big bang nucleosynthesis
+  - emulator
+  - JAX
+  - active learning
+  - uncertainty quantification
+references:
+  - type: software
+    title: "LINX: Light Isotope Nucleosynthesis with JAX"
+    authors:
+      - name: "LINX Collaboration"

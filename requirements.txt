@@ -1,0 +1,16 @@
+# Core runtime dependencies (CPU). For GPU, install the matching jax[cuda] wheel.
+jax>=0.4.30
+jaxlib>=0.4.30
+equinox>=0.11.4
+optax>=0.2.2
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+pyyaml>=6.0
+pandas>=2.0
+
+# Optional (uncomment as needed):
+# linx                 # ground-truth BBN simulator (Light Isotope Nucleosynthesis with JAX)
+# tinygp>=0.3          # alternative GP backend
+# blackjax>=1.2        # HMC/NUTS sampling for posterior inference
+# cobaya>=3.5          # cosmology likelihood / sampler framework

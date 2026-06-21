@@ -1,0 +1,23 @@
+defaults: default.yaml
+seed: 0
+
+data:
+  path: data/processed/bbn_mock_v1.npz
+
+model:
+  kind: mlp
+  width: 128
+  depth: 4
+  activation: gelu
+
+train:
+  epochs: 400
+  batch_size: 256
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  warmup_frac: 0.05
+  grad_clip: 1.0
+  ema_decay: 0.999
+  patience: 60                   # early-stopping patience (epochs)
+
+out_dir: artifacts/mlp

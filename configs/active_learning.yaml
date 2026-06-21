@@ -1,0 +1,23 @@
+defaults: default.yaml
+seed: 0
+
+active_learning:
+  init_size: 256
+  rounds: 6
+  batch_per_round: 64
+  pool_size: 4096
+  acquisition: max_variance      # max_variance | bald | integrated_variance | random
+  retrain_epochs: 200
+  out_dir: artifacts/active_learning
+
+model:
+  kind: mlp
+  width: 128
+  depth: 4
+  activation: gelu
+
+train:
+  batch_size: 256
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  ema_decay: 0.999

@@ -1,0 +1,25 @@
+# Global defaults shared by all stages. Stage configs override these keys.
+seed: 0
+
+parameters:
+  # Active parameters and their [low, high] sampling bounds.
+  # Disable a parameter by removing it from `active`.
+  active: [omega_b, N_eff, tau_n, xi_e]
+  bounds:
+    omega_b: [0.019, 0.025]      # Omega_b h^2
+    N_eff:   [2.0, 4.5]
+    tau_n:   [875.0, 882.0]      # seconds
+    xi_e:    [-0.10, 0.10]       # nu_e degeneracy
+    dNeff_dark: [0.0, 1.0]       # optional dark radiation
+  fiducial:
+    omega_b: 0.02237
+    N_eff:   3.044
+    tau_n:   878.4
+    xi_e:    0.0
+    dNeff_dark: 0.0
+
+targets: [Yp, DH, He3H, Li7H]
+log_targets: [DH, He3H, Li7H]    # emulate these in log10 space
+
+simulator:
+  backend: auto                  # auto | linx | mock

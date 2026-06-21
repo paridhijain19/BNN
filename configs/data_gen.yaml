@@ -1,0 +1,11 @@
+defaults: default.yaml
+seed: 0
+
+data:
+  n_train: 2048
+  n_val: 256
+  n_test: 512
+  design: sobol                  # sobol | lhs | uniform
+  scramble: true
+  out_dir: data/processed
+  name: bbn_mock_v1

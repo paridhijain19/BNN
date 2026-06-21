@@ -1,0 +1,24 @@
+defaults: default.yaml
+seed: 0
+
+data:
+  path: data/processed/bbn_mock_v1.npz
+
+model:
+  kind: residual                 # physics baseline + NN correction
+  width: 128
+  depth: 4
+  activation: gelu
+  residual_scale: 1.0
+
+train:
+  epochs: 400
+  batch_size: 256
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  warmup_frac: 0.05
+  grad_clip: 1.0
+  ema_decay: 0.999
+  patience: 60
+
+out_dir: artifacts/residual
